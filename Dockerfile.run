@@ -1,0 +1,10 @@
+FROM scratch
+
+
+ADD health /bin/health
+
+WORKDIR /bin
+
+EXPOSE 8080
+
+CMD ["health"]
